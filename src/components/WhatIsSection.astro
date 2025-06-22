@@ -1,0 +1,51 @@
+---
+import FeatureCard from './FeatureCard.astro';
+
+interface Props {
+  className?: string;
+}
+
+const { className = "" } = Astro.props;
+
+const features = [
+  {
+    title: "Healthcare Innovation",
+    description: "AI-powered diagnostic tools are detecting diseases earlier, drug discovery is accelerating, and personalised treatment plans are saving lives worldwide. From cancer detection to mental health support, AI is transforming patient care.",
+    icon: "/icons/healthcare.svg"
+  },
+  {
+    title: "Climate Action",
+    description: "Machine learning models predict climate patterns, optimize renewable energy systems, and help reduce carbon emissions. AI is monitoring deforestation, tracking wildlife, and enabling sustainable agriculture practices.",
+    icon: "/icons/climate.svg"
+  },
+  {
+    title: "Education Access",
+    description: "Personalised learning platforms adapt to individual needs, language barriers are broken down by real-time translation, and quality education reaches underserved communities through AI-powered tools.",
+    icon: "/icons/education.svg"
+  }
+];
+---
+
+<section class={`py-24 ${className}`}>
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+        Welcome to AI for Good 
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600">
+        Grounded in the “do no harm” principle, we are dedicated to exploring how artificial intelligence can serve as a positive, ethical force for change. Here, we celebrate innovation that safeguards communities, promotes environmental care, strengthens public governance, and advances social equity. Whether you are just beginning your journey or are an experienced practitioner, our accessible content is designed to empower you and inspire collaboration. Join us as we champion AI practices that truly make a difference.
+        AI for Good represents the transformative power of artificial intelligence when applied to humanity's greatest challenges, creating solutions that benefit everyone.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {features.map(feature => (
+        <FeatureCard 
+          title={feature.title}
+          description={feature.description}
+          icon={feature.icon}
+        />
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import WhatIsSection from '../components/WhatIsSection.astro';
+import JoinSection from '../components/JoinSection.astro';
+import ImpactSection from '../components/ImpactSection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>[ DEMO SITE ] AI for Good - Harnessing Artificial Intelligence for a Better World</title>
+	</head>
+	<body class="min-h-screen bg-white">
+		<Navbar />
+		<main class="w-full">
+			<Hero />
+			<WhatIsSection />
+			<JoinSection />
+			<ImpactSection />
+		</main>
+		<Footer />
+	</body>
+</html>

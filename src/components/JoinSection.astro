@@ -1,0 +1,58 @@
+---
+interface Props {
+  className?: string;
+}
+
+const { className = "" } = Astro.props;
+---
+
+<section class={`py-24 ${className}`}>
+  <div class="container mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#1E293B] bg-gradient-to-r from-[#38BDF8] to-[#3B82F6] text-transparent bg-clip-text">
+        Join the Movement
+      </h2>
+      <p class="text-lg text-gray-600">
+        There are many ways to contribute to AI for Good initiatives and help shape a better future for all. Join us in shaping what AI can and should be
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Donate Card -->
+      <div class="rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-400 via-sky-500 to-blue-600 p-8 text-white text-center flex flex-col items-center">
+        <span class="text-4xl mb-4">🎁</span>
+        <h3 class="text-2xl font-bold mb-4">Contribute</h3>
+        <p class="mb-8">
+          Share AI research and development projects that tackle global challenges and create positive impact.
+        </p>
+        <a href="/community" class="inline-flex px-8 py-3 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-colors text-white font-medium">
+          Connect and Contribute
+        </a>
+      </div>
+
+      <!-- Volunteer Card -->
+      <div class="rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-400 via-sky-500 to-blue-600 p-8 text-white text-center flex flex-col items-center">
+        <span class="text-4xl mb-4">👋</span>
+        <h3 class="text-2xl font-bold mb-4">Volunteer</h3>
+        <p class="mb-8">
+          Contribute your skills and expertise to AI for Good projects, from coding to project management and outreach.
+        </p>
+        <a href="/projects" class="inline-flex px-8 py-3 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-colors text-white font-medium">
+          Join Us
+        </a>
+      </div>
+
+      <!-- Partner Card -->
+      <div class="rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-400 via-sky-500 to-blue-600 p-8 text-white text-center flex flex-col items-center">
+        <span class="text-4xl mb-4">🏢</span>
+        <h3 class="text-2xl font-bold mb-4">Partner</h3>
+        <p class="mb-8">
+          Collaborate with us as an organisation, bringing resources and expertise to accelerate positive AI applications.
+        </p>
+        <a href="/about" class="inline-flex px-8 py-3 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-colors text-white font-medium">
+          Partner Up
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

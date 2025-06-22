@@ -1,0 +1,5 @@
+# This workflow will build and deploy your Azure Static Web App
+# For more information see: https://aka.ms/swa/workflow
+# You will need to create a secret in your repository called AZURE_STATIC_WEB_APPS_API_TOKEN_ with the value of your Azure Static Web Apps API token.
+# You can create this token by going to your Azure Static Web App in the Azure portal,
+# clicking on "Configuration" in the left-hand menu, and then clicking on "API Tokens".

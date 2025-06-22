@@ -1,0 +1,56 @@
+---
+import FeatureCard from './FeatureCard.astro';
+
+interface Props {
+  className?: string;
+}
+
+const { className = "" } = Astro.props;
+
+const features = [
+  {
+    title: "Beginners Guide to AI",
+    description: "Dive into the world of Artificial Intelligence with this comprehensive guide designed for newcomers. Learn the basics of AI, its applications, and how it can be a force for good in society. This guide covers everything from foundational concepts to practical examples, making it easy for anyone to understand and engage with AI technology.",
+    link: "https://microsoft.github.io/AI-For-Beginners/",
+    icon: "/icons/healthcare.svg"
+  },
+  {
+    title: "Introduction to Generative AI and Large Language Models",
+    description: "Explore the capabilities of generative AI and large language models in transforming industries. Understand how these technologies work, their potential applications, and the ethical considerations surrounding their use.",
+    link: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/01-introduction-to-genai/README.md",
+    icon: "/icons/climate.svg"
+  },
+  {
+    title: "Deep Learning",
+    description: "The Deep Learning textbook (from MIT Press, Ian Goodfellow and Yoshua Bengio and Aaron Courville) is a resource intended to help students and practitioners enter the field of machine learning in general and deep learning in particular. The online version of the book is now complete and will remain available online for free.",
+    link: "https://www.deeplearningbook.org/",
+    icon: "/icons/education.svg"
+  }
+];
+---
+
+<section class={`py-24 ${className}`}>
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+        ABOUT DEMO SITE AI for Good 
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600">
+        Whether you're a curious beginner, a student, or a professional looking to upskill, we make AI accessible and impactful through practical guides, inspiring stories, and hands-on resources. Our goal is to demystify complex ideas, break down barriers to learning, and help you see how AI can be a tool for good in your own community.
+
+We're not just about theory—we're about action. By bringing together educators, technologists, and changemakers, we foster a learning ecosystem that encourages ethical, responsible, and creative uses of AI. From interactive tutorials to real-world applications, the AI for Good community is here to help you learn, grow, and contribute to a more inclusive, tech-powered future.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {features.map(feature => (
+        <FeatureCard 
+          title={feature.title}
+          description={feature.description}
+          icon={feature.icon}
+          link={feature.link}  /* clickable url will be undefined if not provided in the feature object */
+        />
+      ))}
+    </div>
+  </div>
+</section>
