@@ -47,7 +47,7 @@ The demo site is published and available at [https://www.aiforgood.org.nz/](http
    - Sections: Header, Hero, Main Content, CTA Cards, Examples, Footer  
 
 > **Tip:** Save this as `prd.md` in your repo root.
-
+- Check out the projects [.github/copilot-instructions.md](.github/copilot-instructions.md) for more details on how to use Copilot effectively.
 ---
 ## Step 2: Create a Visual Mockup
 

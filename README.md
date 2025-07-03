@@ -1,14 +1,14 @@
-# AI for Good
+# AI for Good - Landing Page on Azure with GitHub Copilot
 
-A modern web application template built with Astro, React, and TailwindCSS, designed to showcase initiatives and organisations using artificial intelligence for social impact and humanitarian causes. The site is hosted on Azure Static Web apps and can be customised to add custome backend logic and APIs on the Azure platform.
+This demo project is to showcase a modern web application template built with Astro, React, and TailwindCSS. The site is hosted on Azure Static Web apps and can be customised to add custom backend logic and APIs on the Azure platform.
 
 ## 📖 Overview
-
-Check out the [AI for Good Contribution Guide](AIFORGOOD.md) for more details on how to contribute to this project.
 
 - Learn how to build  and publish this site to Azure from scratch in the [Hands-On Guide](HOWTOGUIDE.md).
 - The final published site is available at [https://www.aiforgood.org.nz/](https://www.aiforgood.org.nz/).
 - The site and code are licensed under the [MIT License](LICENSE).
+
+Check out the [AI for Good Contribution Guide](AIFORGOOD.md) for more details on how to contribute to this demo project.
 
 ## 🌟 Features
 
@@ -73,7 +73,7 @@ Check out the [AI for Good Contribution Guide](AIFORGOOD.md) for more details on
 - **Projects** (`projects.astro`): Showcase of various projects
 - **Community** (`community.astro`): Community engagement and participation
 
-## 🛠️ Getting Started
+## 🛠️ Development Getting Started
 
 ### Prerequisites
 
