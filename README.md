@@ -1,8 +1,12 @@
 # AI for Good
 
-A modern web application template built with Astro, React, and TailwindCSS, designed to showcase initiatives and organisations using artificial intelligence for social impact and humanitarian causes. Check out the [AI for Good Contribution Guide](AIFORGOOD.md) for more details on how to contribute to this project.
+A modern web application template built with Astro, React, and TailwindCSS, designed to showcase initiatives and organisations using artificial intelligence for social impact and humanitarian causes. The site is hosted on Azure Static Web apps and can be customised to add custome backend logic and APIs on the Azure platform.
 
-- Learn how to build this site from scratch in the [Hands-On Guide](HOWTOGUIDE.md).
+## 📖 Overview
+
+Check out the [AI for Good Contribution Guide](AIFORGOOD.md) for more details on how to contribute to this project.
+
+- Learn how to build  and publish this site to Azure from scratch in the [Hands-On Guide](HOWTOGUIDE.md).
 - The final published site is available at [https://www.aiforgood.org.nz/](https://www.aiforgood.org.nz/).
 - The site and code are licensed under the [MIT License](LICENSE).
 
@@ -14,6 +18,7 @@ A modern web application template built with Astro, React, and TailwindCSS, desi
 - 📱 Fully responsive design
 - 🔍 SEO-friendly structure
 - 🌐 Modern, accessible interface
+- 🌐 Hosted on Azure Static Web Apps for easy deployment and scalability
 
 ## 🚀 Project Structure
 
@@ -134,6 +139,8 @@ The final published site is available at [https://www.aiforgood.org.nz/](https:/
 - [Astro Documentation](https://docs.astro.build)
 - [TailwindCSS Documentation](https://tailwindcss.com/docs)
 - [React Documentation](https://react.dev)
+- [Azure Static Web Apps Documentation](https://docs.microsoft.com/azure/static-web-apps/)
+- [Using GitHub Copilot to build this site](HOWTOGUIDE.md)
 
 ## 📄 License
 

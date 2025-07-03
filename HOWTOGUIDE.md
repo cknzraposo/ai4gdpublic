@@ -1,17 +1,18 @@
-# Hands-On Guide: Building an “AI for Good” Landing Page
+# Hands-On Guide: Building a static site Landing Page on Azure with GitHub Copilot
 
-Leverage AI tools end-to-end—from PRD to design to code to deploy a dynamic web site using GitHub Copilot, Astro and Azure Static Web Apps. Please read the [README.md](README.md) for more details on the project & [AIFORGOOD.md](AIFORGOOD.md) for contribution guidelines. The final published site is available at [https://www.aiforgood.org.nz/](https://www.aiforgood.org.nz/).
+Leverage GitHub Copilot end-to-end—from a simple PRD (Product Requirements Document) to visual design to code and deploy a dynamic web site. The site uses Astro as a framework and is hosted on Azure Static Web Apps. 
+The demo site is published and available at [https://www.aiforgood.org.nz/](https://www.aiforgood.org.nz/).
 
 ---
 
 ## Prerequisites
 
-- VSCode or other editor with GitHub Copilot enabled
-- GitHub repository (public or private)
-- GitHub account with Copilot enabled
-- Basic familiarity with Astro and Tailwind CSS (optional)  
-- Access to Claude 3.5 Sonnet ([claude.ai/new](https://claude.ai/new))
-- Azure subscription and account for Static Web Apps deployment (This example uses a free tier)
+- VSCode editor with GitHub Copilot enabled
+- GitHub Copilot Chat enabled (web or VSCode)
+- Basic understanding of Git and GitHub
+- Basic familiarity with Astro and Tailwind CSS (optional - you can learn as you go or use Copilot to help you)
+- Access to Claude 3.5 Sonnet ([claude.ai/new](https://claude.ai/new)) (*optional, for design mockups*)
+- Azure subscription and account for Static Web Apps deployment (This example uses a free tier which is sufficient for this exercise)
 
 ---
 
@@ -30,10 +31,18 @@ Leverage AI tools end-to-end—from PRD to design to code to deploy a dynamic we
 1. **Open** GitHub Copilot Chat on the web.  
 2. **Prompt:**  
    ```text
-   Describe a landing page for a site promoting "AI for Good (*in New Zealand*)" in simple terms. Note: *my initil prompt didn't include the "in New Zealand".
-   ```  
+   Describe a landing page for a site promoting "AI for Good" in simple terms. 
+   ``` 
+3. **Iterate** on the description with your prompt until you have a clear vision of the page structure and content. Keep it simple at first, focusing on the main sections and purpose.  
+   - **Example:**  
+     - Header with navigation  
+     - Hero section with a tagline and image  
+     - Main content area with features or benefits  
+     - Call-to-action (CTA) cards  
+     - Examples of AI for Good projects  
+     - Footer with links and contact info
 
-3. **Capture the output**—a lightweight PRD (Product Requirements Document) that includes:  
+4. **Capture the output**—a lightweight PRD (Product Requirements Document) that includes:  
    - Purpose, audience, messaging pillars  
    - Sections: Header, Hero, Main Content, CTA Cards, Examples, Footer  
 
@@ -101,8 +110,9 @@ npx tailwindcss init -p
 ### 5.2 Prompt and Build Sections Incrementally  
 
 **General Prompt Template:**  
+```text
 > “Using `x-source/1.header-nav-hero.png`, update `src/pages/index.astro` to add a responsive navbar and hero section. Follow the layout and styling principles.”
-
+```
 
 **Repeat** for each screenshot/section: (note you will need to adjust the prompt slightly for each section as you go)
 - `2.main-content.png` → Features or “About” block  
@@ -117,7 +127,10 @@ git commit -m "feat: add header & hero section"
 
 ---
 
-## Step 6: Deploy to Azure Static Web Apps  
+## Step 6: Deploy to Azure Static Web Apps 
+
+- **Azure Static Web Apps** is a service that automatically builds and deploys full-stack web apps to Azure from a GitHub repository. It supports static sites with serverless APIs, making it ideal for this project.
+- Note: If you don't have an Azure account, you can sign up for a free account which includes a limited number of free Static Web Apps deployments. See: [Azure Free Account](https://azure.microsoft.com/free/)
 
 1. **Push** your code to GitHub (`main` branch).  
 2. **In Azure Portal** ▶️ Create **Static Web App**  
@@ -153,4 +166,4 @@ git commit -m "feat: add header & hero section"
 
 ---
 
-**You’re live!** Share your repo or demo link, let others clone the exercise, and invite contributions. Enjoy building—and iterating—your site!
+**You’re live!** Share your repo or demo link, let others clone the exercise, and invite contributions. Enjoy building—and iterating—your site using GitHub Copilot!
